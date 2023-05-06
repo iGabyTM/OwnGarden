@@ -54,7 +54,7 @@ public class PluginConfig extends Skyoconfig {
 	public List<String> fungusCrimsonSchematics = Arrays.asList("crimson_fungus/1.schem", "crimson_fungus/2.schem", "crimson_fungus/3.schem");
 
 	@ConfigOptions(name = "fungus.warped")
-	public List<String> fungusWarpedSchematics = Arrays.asList("fungus_warped/1.schem", "fungus_warped/2.schem", "fungus_warped/3.schem");
+	public List<String> fungusWarpedSchematics = Arrays.asList("warped_fungus/1.schem", "warped_fungus/2.schem", "warped_fungus/3.schem");
 
 	/**
 	 * Creates a new plugin config instance.
