@@ -81,8 +81,8 @@ class OwnGarden : JavaPlugin() {
                     pluginConfig.saplingJungleSchematics.remove(invalidSchematic)
                     pluginConfig.saplingAcaciaSchematics.remove(invalidSchematic)
                     pluginConfig.saplingDarkOakSchematics.remove(invalidSchematic)
-                    pluginConfig.mushroomBrownSchematics.remove(invalidSchematic)
-                    pluginConfig.mushroomRedSchematics.remove(invalidSchematic)
+                    pluginConfig.fungusCrimsonSchematics.remove(invalidSchematic)
+                    pluginConfig.fungusWarpedSchematics.remove(invalidSchematic)
                 }
                 log(ChatColor.RED, "They are not going to be used by the plugin. Please fix them and restart your server.")
             } else {

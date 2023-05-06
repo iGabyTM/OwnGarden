@@ -50,11 +50,11 @@ public class PluginConfig extends Skyoconfig {
 	@ConfigOptions(name = "sapling.dark-oak")
 	public List<String> saplingDarkOakSchematics = Arrays.asList("dark_oak/1.schematic", "dark_oak/2.schematic", "dark_oak/3.schematic");
 
-	@ConfigOptions(name = "mushroom.brown")
-	public List<String> mushroomBrownSchematics = Arrays.asList("brown_mushroom/1.schem", "brown_mushroom/2.schem", "brown_mushroom/3.schem");
+	@ConfigOptions(name = "fungus.crimson")
+	public List<String> fungusCrimsonSchematics = Arrays.asList("crimson_fungus/1.schem", "crimson_fungus/2.schem", "crimson_fungus/3.schem");
 
-	@ConfigOptions(name = "mushroom.red")
-	public List<String> mushroomRedSchematics = Arrays.asList("red_mushroom/1.schem", "red_mushroom/2.schem", "red_mushroom/3.schem");
+	@ConfigOptions(name = "fungus.warped")
+	public List<String> fungusWarpedSchematics = Arrays.asList("fungus_warped/1.schem", "fungus_warped/2.schem", "fungus_warped/3.schem");
 
 	/**
 	 * Creates a new plugin config instance.
@@ -77,33 +77,34 @@ public class PluginConfig extends Skyoconfig {
 	 */
 
 	public List<String> getSchematics(final Material material) {
-		switch(material) {
-		case OAK_SAPLING: // Oak
-		case OAK_LOG:
-			return saplingOakSchematics;
-		case SPRUCE_SAPLING: // Spruce
-		case SPRUCE_LOG:
-			return saplingSpruceSchematics;
-		case BIRCH_SAPLING: // Birch
-		case BIRCH_LOG:
-			return saplingBirchSchematics;
-		case JUNGLE_SAPLING: // Jungle
-		case JUNGLE_LOG:
-			return saplingJungleSchematics;
-		case ACACIA_SAPLING: // Acacia
-		case ACACIA_LOG:
-			return saplingAcaciaSchematics;
-		case DARK_OAK_SAPLING: // Dark Oak
-		case DARK_OAK_LOG:
-			return saplingDarkOakSchematics;
-		case RED_MUSHROOM: // Red mushroom
-		case MUSHROOM_STEM:
-			return mushroomRedSchematics;
-		case BROWN_MUSHROOM: // Brown mushroom
-			return mushroomBrownSchematics;
+		switch (material) {
+			case OAK_SAPLING: // Oak
+			case OAK_LOG:
+				return saplingOakSchematics;
+			case SPRUCE_SAPLING: // Spruce
+			case SPRUCE_LOG:
+				return saplingSpruceSchematics;
+			case BIRCH_SAPLING: // Birch
+			case BIRCH_LOG:
+				return saplingBirchSchematics;
+			case JUNGLE_SAPLING: // Jungle
+			case JUNGLE_LOG:
+				return saplingJungleSchematics;
+			case ACACIA_SAPLING: // Acacia
+			case ACACIA_LOG:
+				return saplingAcaciaSchematics;
+			case DARK_OAK_SAPLING: // Dark Oak
+			case DARK_OAK_LOG:
+				return saplingDarkOakSchematics;
+			case WARPED_FUNGUS: // Warped fungus
+			case WARPED_STEM:
+				return fungusWarpedSchematics;
+			case CRIMSON_FUNGUS: // Brown mushroom
+			case CRIMSON_STEM:
+				return fungusCrimsonSchematics;
+			default:
+				return null;
 		}
-
-		return null;
 	}
 
 }

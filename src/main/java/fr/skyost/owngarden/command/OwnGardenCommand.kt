@@ -32,8 +32,8 @@ class OwnGardenCommand(private val plugin: OwnGarden) : CommandExecutor {
         sender.sendMessage(ChatColor.BOLD.toString() + "- Jungle : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.saplingJungleSchematics))
         sender.sendMessage(ChatColor.BOLD.toString() + "- Acacia : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.saplingAcaciaSchematics))
         sender.sendMessage(ChatColor.BOLD.toString() + "- Dark Oak : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.saplingDarkOakSchematics))
-        sender.sendMessage(ChatColor.BOLD.toString() + "- Brown Mushroom : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.mushroomBrownSchematics))
-        sender.sendMessage(ChatColor.BOLD.toString() + "- Red Mushroom : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.mushroomRedSchematics))
+        sender.sendMessage(ChatColor.BOLD.toString() + "- Crimson Fungus : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.fungusCrimsonSchematics))
+        sender.sendMessage(ChatColor.BOLD.toString() + "- Warped Fungus : " + ChatColor.RESET + Joiner.on(' ').join(plugin.pluginConfig!!.fungusWarpedSchematics))
         sender.sendMessage(line)
         sender.sendMessage(ChatColor.GOLD.toString() + "PERMISSIONS : ")
         for (permission in description.permissions) {
