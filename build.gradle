@@ -22,7 +22,7 @@ repositories {
 dependencies {
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
 
-    shadow 'org.spigotmc:spigot-api:1.16.3-R0.1-SNAPSHOT'
+    shadow 'org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT'
     implementation 'org.bstats:bstats-bukkit-lite:1.5'
     implementation 'org.zeroturnaround:zt-zip:1.14'
     implementation 'com.eclipsesource.minimal-json:minimal-json:0.9.5'
@@ -43,4 +43,9 @@ compileKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+}
+
+tasks.register("buildToServer", Copy) {
+    from(shadowJar)
+    into("./testServer/plugins")
 }
